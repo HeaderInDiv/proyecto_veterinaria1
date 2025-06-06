@@ -1,0 +1,74 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: azure;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+header {
+  display: flex; 
+  justify-content: space-between; /* Distribuye el h1 a la izquierda y la lista a la derecha */
+  align-items: center;            /* Centra verticalmente */
+  height: 80px;                  /*altura*/
+  background-color: rgb(4, 131, 11);
+  background-size: cover;                /*ajustar imagen para cubrir header*/
+  background-position: center; /*ajustar imagen al centro*/
+  padding: 0 40px; 
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+  color: rgb(225, 247, 32);
+
+}
+
+header ul {
+  display: flex;
+  gap: 30px; /*distancia entre elementos de la lista*/
+  list-style: none;/*quitar viñetas*/
+  margin: 0;
+  padding: 0;
+  color: rgb(241, 241, 250);
+  font-style: italic;
+}
+a{
+  text-decoration: none; /*quitar subrayado de los enlaces*/
+  color: inherit; /*colo del elemento pader: ul*/
+}
+
+.contenedor{
+    background-color: rgb(190, 216, 240);
+}
+
+.bienvenidos{
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.galeria {
+  display: grid; /*cuadrócula adaptable*/
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 50px;
+}
+
+.galeria img {
+  width: 100%; /*ocupar espacio completo de galeria*/
+  height: auto; /*ajustar tamaño a galeria*/
+  object-fit: cover;
+  border-radius: 8px; 
+  border: solid;
+  border-color: rgb(29, 136, 8);
+  transition: transform 0.4s;
+}
+
+.derechos{
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 0;
+}
+.galeria img:hover{
+  transform: scale(1.2);
+}
